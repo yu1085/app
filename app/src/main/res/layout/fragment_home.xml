@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center">
+        <Button android:id="@+id/matchBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="视频速配" android:background="@drawable/rounded_btn" android:textColor="#fff" android:textSize="16sp" android:layout_marginRight="12dp"/>
+        <Button android:id="@+id/filterBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="筛选" android:background="@drawable/rounded_btn" android:textColor="#fff" android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView android:text="活跃用户" android:textSize="18sp" android:textStyle="bold" android:layout_marginTop="20dp" android:layout_marginBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activeUserRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout> 

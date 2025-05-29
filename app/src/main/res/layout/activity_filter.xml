@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView android:text="年龄" android:textSize="16sp" android:textStyle="bold"/>
+        <SeekBar android:id="@+id/ageSeekBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+        <TextView android:text="通话价格" android:textSize="16sp" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <SeekBar android:id="@+id/priceSeekBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+        <TextView android:text="通话类型" android:textSize="16sp" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <RadioGroup android:id="@+id/typeRadioGroup" android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <RadioButton android:id="@+id/typeAll" android:text="全部"/>
+            <RadioButton android:id="@+id/typeVideo" android:text="视频"/>
+            <RadioButton android:id="@+id/typeVoice" android:text="语音"/>
+        </RadioGroup>
+        <TextView android:text="所在城市" android:textSize="16sp" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <EditText android:id="@+id/cityEdit" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="不限" android:layout_marginBottom="8dp"/>
+        <TextView android:text="家乡" android:textSize="16sp" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <EditText android:id="@+id/hometownEdit" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="不限" android:layout_marginBottom="8dp"/>
+        <TextView android:text="标签" android:textSize="16sp" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <Button android:text="甜美可爱" android:background="@drawable/rounded_btn" android:textColor="#fff" android:layout_marginRight="8dp"/>
+            <Button android:text="性感成熟" android:background="@drawable/rounded_btn" android:textColor="#fff" android:layout_marginRight="8dp"/>
+            <Button android:text="知性" android:background="@drawable/rounded_btn" android:textColor="#fff" android:layout_marginRight="8dp"/>
+            <Button android:text="阳光" android:background="@drawable/rounded_btn" android:textColor="#fff"/>
+        </LinearLayout>
+        <TextView android:text="优先筛选" android:textSize="16sp" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_marginBottom="8dp">
+            <Switch android:text="优先查看在线女生"/>
+            <Switch android:text="优先查看高颜女生"/>
+            <Switch android:text="优先查看好评女生"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_marginTop="24dp">
+            <Button android:id="@+id/resetBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="重置" android:background="@drawable/rounded_btn" android:textColor="#fff" android:textSize="16sp" android:layout_marginRight="12dp"/>
+            <Button android:id="@+id/confirmBtn" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="确定" android:background="@drawable/rounded_btn" android:textColor="#fff" android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView> 

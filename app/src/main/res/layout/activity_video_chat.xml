@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/videoMatchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="视频速配" />
+
+    <Button
+        android:id="@+id/voiceMatchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="语音速配" />
+
+    <TextView
+        android:id="@+id/activeUsersText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="当前活跃用户：10人"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/filterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="筛选功能" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="用户个人资料页面" />
+
+    <Button
+        android:id="@+id/messageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="消息列表" />
+
+</LinearLayout> 
